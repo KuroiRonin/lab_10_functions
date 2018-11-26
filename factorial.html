@@ -2,14 +2,16 @@
 <html>
 <body>
 <script>
-var total = 1 ;
-var fact = parseInt( prompt("Number Please: ")  );
+var number = parseInt( prompt("Number Please: ")  );
+factorial(number);
 
-for(var i=fact; i>=1; i--) {
-	total *= i;
+function factorial(number) {
+var fact =1;
+for(var i=number; i>=1; i--) {
+	fact *= i;
 }
-console.log("The factorial of " + fact + " is " + total) ;
-
+console.log("The factorial of " + number + " is " + fact) ;
+}
 </script>
 </body>
 </html>
